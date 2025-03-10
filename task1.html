@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Profile Card Styling */
+        .profile-card {
+            width: 300px;
+            text-align: center;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #3498db;
+        }
+
+        .profile-card h2 {
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .profile-card p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3498db;
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=" alt="Profile Picture"> 
+        <h2>John Doe</h2>
+        <p>Software Engineer</p>
+        <p class="bio">Passionate about coding and technology. Love to learn new things every day!</p>
+        <div class="social-icons">
+            <a href="#" target="_blank">🔗</a>
+            <a href="#" target="_blank">💼</a>
+            <a href="#" target="_blank">🐦</a>
+        </div>
+    </div>
+
+</body>
+</html>
